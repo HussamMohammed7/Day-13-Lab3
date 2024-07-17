@@ -7,6 +7,14 @@ public class Novel extends Book{
     public Novel() {
     }
 
+    public String getGenre() {
+        return genre;
+    }
+
+    public void setGenre(String genre) {
+        this.genre = genre;
+    }
+
     public Novel(String title, String auteur, String ISBN, double price, int stock, String genre) {
         super(title, auteur, ISBN, price, stock);
         this.genre = genre;

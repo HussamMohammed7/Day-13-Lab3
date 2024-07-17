@@ -7,7 +7,15 @@ public class AcademicBook extends Book {
     public AcademicBook() {
     }
 
-    public AcademicBook(String title, String auteur, String ISBN, double price, int stock, ArrayList<Review> reviews,String subject) {
+    public String getSubject() {
+        return subject;
+    }
+
+    public void setSubject(String subject) {
+        this.subject = subject;
+    }
+
+    public AcademicBook(String title, String auteur, String ISBN, double price, int stock, ArrayList<Review> reviews, String subject) {
         super(title, auteur, ISBN, price, stock, reviews);
         this.subject = subject;
     }
